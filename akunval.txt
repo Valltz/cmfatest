@@ -1,0 +1,33 @@
+proxies:  
+- name: SSHSTORES
+  server: 104.18.2.2
+  port: 443
+  type: vmess
+  uuid: d6ab750f-8322-4484-a0cf-a9f067f10b52
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg.vmess5.xservs.xyz
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: sg.vmess5.xservs.xyz
+  udp: true
+- name: JAGOANSSH
+  server: 104.18.2.2
+  port: 443
+  type: vmess
+  uuid: 2d5b0807-40bc-4a59-a09d-90de19ad1ab1
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: sg7-ray.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /JAGOANSSH/
+    headers:
+      Host: sg7-ray.ipservers.xyz
+  udp: true
